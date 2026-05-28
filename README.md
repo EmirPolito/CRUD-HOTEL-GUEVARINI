@@ -14,10 +14,10 @@
 gestionar usuarios, habitaciones y reservaciones, integrando autenticación, control de roles y validaciones inteligentes para mejorar la organización operativa del hotel.
 <br>
 <br>
-<img width="1600" height="725" alt="3ee28d41-9cf1-4338-911d-03c1e3533d8a" src="https://github.com/user-attachments/assets/6a82e645-35c9-45f1-bba0-772bb1e1fa63" />
+<img height="732" alt="1528df37-3067-4c41-b19f-24c5c8da4d2c" src="https://github.com/user-attachments/assets/24958552-e03e-4258-802f-ee4ffcdf5297" />
 <br>
 <br>
-<img width="1600" height="730" alt="3753bac1-7afa-4e0d-b38b-21b489363ea4" src="https://github.com/user-attachments/assets/2e7941e6-f0fc-43f2-b282-a6c40960fb72" />
+<img height="723" alt="6b2051fb-2c6e-4184-a210-eeabb4cef1d2" src="https://github.com/user-attachments/assets/8ff1127b-8c1d-437c-90fc-4bf96387c3fb" />
 
 ---
 
