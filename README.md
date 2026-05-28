@@ -23,28 +23,35 @@ gestionar usuarios, habitaciones y reservaciones, integrando autenticación, con
 
 ## Características Principales
 
-- **Autenticación y Seguridad:**
-  - Sistema de inicio de sesión seguro.
-  - Gestión rigurosa de roles (Administrador y Cliente).
-  - Verificación de cuentas nuevas y sistema de recuperación de contraseñas mediante enlace único enviado por correo electrónico.
-  - Funcionalidad para **reenviar el correo de verificación** en caso de que un registro quede pendiente o el correo original se pierda.
-- **Gestión de Clientes:**
-  - Base de datos centralizada de información de contacto de huéspedes (activos/inactivos).
-- **Control de Inventario (Habitaciones):**
-  - Mantenimiento dinámico de habitaciones, abarcando diferentes tipos (Sencilla, Doble, Suite) y sus respectivos precios.
-  - Monitoreo en tiempo real de su estatus (Disponible, Ocupada, Mantenimiento).
-- **Administración de Reservaciones:**
-  - Creación, seguimiento y confirmación de reservaciones hoteleras.
-  - Trazabilidad y validación inteligente entre periodos de ingreso y salida.
+### Autenticación y Seguridad
+
+**Sistema** de inicio de sesión seguro.
+**Gestión rigurosa de roles (Administrador y Cliente).**
+**Verificación de cuentas nuevas** y sistema de recuperación de contraseñas mediante enlace único enviado por correo electrónico.
+**Funcionalidad para reenviar el correo de verificación** en caso de que un registro quede pendiente o el correo original se pierda.
+
+### Gestión de Clientes
+
+**Base de datos centralizada de información de contacto de huéspedes** (activos/inactivos).
+
+### Control de Inventario (Habitaciones)
+
+**Mantenimiento** dinámico de habitaciones, abarcando diferentes tipos (Sencilla, Doble, Suite) y sus respectivos precios.
+**Monitoreo** en tiempo real de su estatus (Disponible, Ocupada, Mantenimiento).
+
+### Administración de Reservaciones
+
+**Creación**, seguimiento y confirmación de reservaciones hoteleras.
+**Trazabilidad y validación inteligente** entre periodos de ingreso y salida.
 
 ---
 
 ## Tecnologías Utilizadas
 
-- **Frontend:** Estructura en HTML5 semántico, diseño estilizado con Vanilla CSS3 y lógica interactiva con JavaScript.
-- **Backend:** Desarrollado sobre PHP 7.4+ gestionando la lógica de negocio y las persistencias.
-- **Base de Datos:** Servidor MySQL o MariaDB.
-- **Librerías / Dependencias:** Manejadas mediante Composer (por ejemplo, PHPMailer para el control de la mensajería).
+**Frontend:** Estructura en HTML5 semántico, diseño estilizado con Vanilla CSS3 y lógica interactiva con JavaScript.
+**Backend:** Desarrollado sobre PHP 7.4+ gestionando la lógica de negocio y las persistencias.
+**Base de Datos:** Servidor MySQL o MariaDB.
+**Librerías / Dependencias:** Manejadas mediante Composer (por ejemplo, PHPMailer para el control de la mensajería).
 
 ---
 
@@ -71,6 +78,8 @@ Sigue estos pasos rápidos para desplegar el proyecto y asegurar que te funcione
    Si deseas probar el sistema de registro y recuperación de contraseñas, asegúrate de colocar tus credenciales SMTP (ej. Mailtrap) en los archivos dentro de la carpeta `php/auth/`.
 
 Para más detalles, revisa nuestra --> **[Guía Completa de Configuración y Despliegue](CONFIGURACION.md)**
+
+---
 
 ## Cuentas de Prueba Preconfiguradas
 
