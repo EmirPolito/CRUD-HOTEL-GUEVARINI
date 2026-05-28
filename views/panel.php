@@ -23,14 +23,16 @@ $rol_id = $_SESSION['usuario_rol_id']; // Rol del usuario (1 = admin, otro = cli
 
     <!-- Hoja de estilos con parámetro dinámico para evitar caché -->
     <link rel="stylesheet" href="../css/panel.css?v=<?php echo time(); ?>">
+
 </head>
 
-<body>
+<body style="background-image: url('../img/menu.jpg?v=<?php echo time(); ?>');">
 
     <!-- NAVBAR PRINCIPAL -->
     <nav class="navbar">
         <a href="panel.php" class="logo-link" style="text-decoration:none;">
-            <div class="logo">HOTEL</div>
+            <div class="logo"><img src="../img/logo-hotel-guevarini-blanco.png" alt="Hotel Guevarini"
+                    style="height: 101px; margin: -30px 0;"></div>
         </a>
 
         <div class="nav-links">
@@ -47,7 +49,7 @@ $rol_id = $_SESSION['usuario_rol_id']; // Rol del usuario (1 = admin, otro = cli
             <?php endif; ?>
 
             <!-- Botón para cerrar sesión -->
-            <a href="../php/auth/logout.php" class="btn btn-danger" style="margin-left:15px;padding:5px 10px;">
+            <a href="../php/auth/logout.php" class="btn btn-danger" style="margin-left: 10px; padding: 5px 10px;">
                 Cerrar Sesión
             </a>
 
@@ -56,7 +58,6 @@ $rol_id = $_SESSION['usuario_rol_id']; // Rol del usuario (1 = admin, otro = cli
 
     <!-- CONTENEDOR PRINCIPAL DEL PANEL -->
     <div class="panel-grid">
-        <div class="panel-left"></div>
         <div class="panel-right">
             <div class="panel-overlay"></div>
             <div class="panel-content">

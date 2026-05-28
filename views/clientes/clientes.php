@@ -30,8 +30,9 @@ $clientes = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <body>
 
     <nav class="navbar">
-        <a href="../panel.php" class="logo-link" style="text-decoration: none;">
-            <div class="logo">HOTEL</div>
+        <a href="../panel.php" class="logo-link" style="text-decoration:none;">
+            <div class="logo"><img src="../../img/logo-hotel-guevarini-blanco.png" alt="Hotel Guevarini"
+                    style="height: 101px; margin: -30px 0;"></div>
         </a>
         <div class="nav-links">
              <span style="font-weight: 600; margin-right: 390px;">

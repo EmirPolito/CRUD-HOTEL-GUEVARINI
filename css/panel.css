@@ -1,6 +1,25 @@
 /* --- ESTILOS MIGRADOS DE GLOBAL.CSS --- */
 * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-body { display: flex; flex-direction: column; min-height: 100vh; background-color: #f4f6f9; color: #333; }
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #1a1a2e; /* Fondo oscuro */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #f1f2f6; /* Texto claro */
+  position: relative;
+}
+
+/* Efecto superpuesto oscuro para mejorar legibilidad */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+}
+
 .navbar { background: #2c3e50; color: #fff; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
 .navbar .nav-links { display: flex; gap: 15px; align-items: center; }
 .navbar a { color: #fff; text-decoration: none; font-weight: 600; }
@@ -8,7 +27,7 @@ body { display: flex; flex-direction: column; min-height: 100vh; background-colo
 .hidden { display: none; }
 .text-center { text-align: center; }
 .container { max-width: 1000px; margin: 0 auto; padding: 20px; }
-.btn { display: inline-block; padding: 11px 15px; border: none; border-radius: 4px; cursor: pointer; font-size: 18px; text-align: center; text-decoration: none; transition: background 0.3s; }
+.btn { display: inline-block; padding: 11px 15px; border: none; border-radius: 4px; cursor: pointer; font-size: 17px; text-align: center; text-decoration: none; transition: background 0.3s; }
 .btn-primary { background: #1170ae; color: #fff !important; }
 .btn-primary:hover { background: #1170ae; color: #fff !important; }
 .btn-danger { background: #e0210c; color: #fff !important; }
@@ -19,67 +38,48 @@ body { display: flex; flex-direction: column; min-height: 100vh; background-colo
 .btn-success:hover { background: #27ae60; color: #fff !important; }
 /* -------------------------------------- */
 
-/* ===== GRID PRINCIPAL ===== */
+/* ===== MITAD IZQUIERDA ELIMINADA ===== */
 
 .panel-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  height: calc(100vh - 65px);
+  display: flex;
+  width: 100%;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 75px);
 }
 
-/* ===== MITAD IZQUIERDA ===== */
-.panel-left {
-  background-image: url("../img/panel/logo.png");
-  background-color: #1369a3;
-  background-size: 60%; /* 👈 tamaño de la imagen */
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-/* ===== MITAD DERECHA ===== */
-
+/* contenido */
 .panel-right {
   position: relative;
-
-  background-image: url("../img/menu.jpg");
-
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 40px;
 }
 
-/* OSCURECER IMAGEN DERECHA */
-.panel-overlay {
-  position: absolute;
-  inset: 1;
-  background: #1514148c;
-  z-index: 1;
-}
 
 /* CONTENIDO PANEL */
 .panel-content {
   position: relative;
   z-index: 2;
   width: 90%;
-  max-width: 500px;
+  max-width: 520px;
 }
 
 /* TITULO */
 .panel-title {
-  font-size: 36px;
+  font-size: 40px;
   color: white;
-  margin-bottom: 42px;
+  margin-bottom: 55px;
   text-align: center;
 }
 
 /* GRID OPCIONES */
 .grid-opciones {
   display: grid;
-  gap: 35px;
+  gap: 45px;
 }
 
 /* TARJETAS */
@@ -90,7 +90,7 @@ body { display: flex; flex-direction: column; min-height: 100vh; background-colo
   text-align: center;
   text-decoration: none;
   color: #333;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
 }
 
 /* TITULO TARJETAS */
@@ -125,10 +125,6 @@ body { display: flex; flex-direction: column; min-height: 100vh; background-colo
 @media (max-width: 900px) {
   .panel-grid {
     grid-template-columns: 1fr;
-  }
-
-  .panel-left {
-    height: 250px;
   }
 }
 

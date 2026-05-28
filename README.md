@@ -1,27 +1,27 @@
 <div align="center">
-  <h1>HOTEL GUEVARINI</h1>
-  <h1> Sistema de Gestión de Hotel</h1>
-  <p>Una solución web integral para la administración eficiente de hoteles y reservaciones.</p>
 
-  <!-- Badges -->
-  <p>
-    <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP Badge"/>
-    <img src="https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL Badge"/>
-    <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5 Badge"/>
-    <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3 Badge"/>
-    <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" alt="JavaScript Badge"/>
-  </p>
+# HOTEL GUEVARINI
+
+[![PHP](https://img.shields.io/badge/PHP-7.4+-777BB4?logo=php&logoColor=white)](https://www.php.net/)
+[![MySQL](https://img.shields.io/badge/MySQL-Database-00000F?logo=mysql&logoColor=white)](https://www.mysql.com/)
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)](https://developer.mozilla.org/es/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)](https://developer.mozilla.org/es/docs/Web/CSS)
+[![JavaScript](https://img.shields.io/badge/JavaScript-ES6-323330?logo=javascript&logoColor=F7DF1E)](https://developer.mozilla.org/es/docs/Web/JavaScript)
+
 </div>
 
-<br/>
-
-## Sobre el Proyecto
-
-Este **Sistema de Gestión de Hotel (CRUD)** es una aplicación web robusta desarrollada bajo los estándares de **PHP** y bases de datos relacionales en **MySQL**. Está diseñado para simplificar y digitalizar los procesos administrativos dentro de un entorno hotelero, permitiendo un control estricto sobre los usuarios, el registro de clientes, el inventario de habitaciones y el ciclo completo de las reservaciones.
+**HOTEL GUEVARINI** es un sistema web desarrollado para optimizar la administración hotelera mediante un entorno moderno, intuitivo y seguro. La plataforma permite
+gestionar usuarios, habitaciones y reservaciones, integrando autenticación, control de roles y validaciones inteligentes para mejorar la organización operativa del hotel.
+<br>
+<br>
+<img width="1600" height="725" alt="3ee28d41-9cf1-4338-911d-03c1e3533d8a" src="https://github.com/user-attachments/assets/6a82e645-35c9-45f1-bba0-772bb1e1fa63" />
+<br>
+<br>
+<img width="1600" height="730" alt="3753bac1-7afa-4e0d-b38b-21b489363ea4" src="https://github.com/user-attachments/assets/2e7941e6-f0fc-43f2-b282-a6c40960fb72" />
 
 ---
 
-## ✨ Características Principales
+## Características Principales
 
 - **Autenticación y Seguridad:**
   - Sistema de inicio de sesión seguro.
@@ -39,7 +39,7 @@ Este **Sistema de Gestión de Hotel (CRUD)** es una aplicación web robusta desa
 
 ---
 
-## 🛠️ Tecnologías Utilizadas
+## Tecnologías Utilizadas
 
 - **Frontend:** Estructura en HTML5 semántico, diseño estilizado con Vanilla CSS3 y lógica interactiva con JavaScript.
 - **Backend:** Desarrollado sobre PHP 7.4+ gestionando la lógica de negocio y las persistencias.
@@ -48,17 +48,31 @@ Este **Sistema de Gestión de Hotel (CRUD)** es una aplicación web robusta desa
 
 ---
 
-## 🚀 Guía de Instalación Rápida
+## Guía de Instalación y Configuración
 
-Sigue estos pasos para desplegar el proyecto en tu entorno de desarrollo local:
+Sigue estos pasos rápidos para desplegar el proyecto y asegurar que te funcione todo correctamente:
 
-Para conocer todos los pasos detallados de instalación, desde la preparación de la base de datos hasta la configuración de PHP y SMTP, así como poner en marcha este proyecto de forma exitosa, revisa nuestra:
+1. **Instalar Dependencias:**
+   Abre una terminal en la carpeta raíz del proyecto y ejecuta `composer install` para descargar las librerías necesarias (como PHPMailer).
+2. **Crear la Base de Datos:**
+   Importa el archivo `base_de_datos.sql` en tu gestor de MySQL (por ejemplo, phpMyAdmin, DBeaver o consola). Esto creará automáticamente la base de datos `hotel_guevarini_publico` con todas las tablas y datos iniciales.
 
-👉 **[Guía Completa de Configuración y Despliegue](CONFIGURACION.md)**
+3. **Configurar la Conexión:**
+   Abre el archivo `php/conexion.php` y actualiza las credenciales para que coincidan con tu servidor MySQL local:
 
----
+   ```php
+   private $host = "localhost";
+   private $db_name = "hotel_guevarini_publico";
+   private $username = "root"; // Tu usuario de MySQL
+   private $password = "";     // Tu contraseña de MySQL
+   ```
 
-## 🔑 Cuentas de Prueba Preconfiguradas
+4. **Correos Electrónicos (Opcional):**
+   Si deseas probar el sistema de registro y recuperación de contraseñas, asegúrate de colocar tus credenciales SMTP (ej. Mailtrap) en los archivos dentro de la carpeta `php/auth/`.
+
+Para más detalles, revisa nuestra --> **[Guía Completa de Configuración y Despliegue](CONFIGURACION.md)**
+
+## Cuentas de Prueba Preconfiguradas
 
 Tras importar la base de datos, el sistema se abastecerá con un juego de credenciales semilla listas para evaluar el sistema en sus dos perfiles. La contraseña genérica asignada para pruebas es `12345`.
 
@@ -69,7 +83,7 @@ Tras importar la base de datos, el sistema se abastecerá con un juego de creden
 
 ---
 
-## 📂 Organización del Directorio
+## Organización del Directorio
 
 ```text
 CRUD-HOTEL-GUEVARINI-Publico/
@@ -87,20 +101,20 @@ CRUD-HOTEL-GUEVARINI-Publico/
 
 ---
 
-## 📜 Licencia
+## Licencia
 
 Este proyecto está bajo la Licencia MIT. Para más detalles, consulta el archivo [LICENSE](LICENSE).
 
 ---
 
-## 👨‍💻 Desarrolladores
+## Desarrolladores
 
 Este proyecto fue estructurado y desarrollado como entrega e implementación final del Sistema de Gestión Hotelera por:
 
-**Emir Polito**
+**Emir Polito** - Frontend & QA Tester
 
 - GitHub: https://github.com/EmirPolito
 
-**Irving Mendez**
+**Irving Mendez** - Full Stack & Designer
 
 - Github: https://github.com/1RV1N6-M3ND3Z
