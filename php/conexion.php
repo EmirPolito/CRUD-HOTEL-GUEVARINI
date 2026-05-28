@@ -4,10 +4,10 @@
 class Conexion
 {
     // Variables privadas, ya que solo se usan dentro de la clase
-    private $host = "tu-host";
-    private $db_name = "tu-base-de-datos";
-    private $username = "tu-usuario";
-    private $password = "tu-contraseña";
+    private $host = "localhost";
+    private $db_name = "hotel_guevarini_publico";
+    private $username = "root";
+    private $password = "1234";
     public $conn;
 
 
@@ -21,15 +21,14 @@ class Conexion
                 "mysql:host=" . $this->host . ";dbname=" . $this->db_name,
                 $this->username,
                 $this->password
-                );
+            );
             $this->conn->exec("set names utf8"); // Permite manejar correctamente caracteres especiales (acentos, ñ, etc.)
 
 
             // Activa el manejo de errores mediante excepciones
             // Si ocurre un error, no pasa desapercibido
             $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        }
-        catch (PDOException $exception) {
+        } catch (PDOException $exception) {
 
             // Captura el error y muestra el mensaje
             echo "Error de conexión: " . $exception->getMessage();
