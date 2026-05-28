@@ -54,9 +54,9 @@ $usuarios = $stmt->fetchAll(PDO::FETCH_ASSOC);//Obtener todos los resultados com
             </span>
 
             <a href="../panel.php">Inicio</a>
-            <a href="../usuarios/usuarios.php">Usuarios</a>
-            <a href="../../php/auth/logout.php" class="btn btn-danger" style="margin-left: 10px; padding: 5px 10px;">Cerrar Sesión</a>
-            
+            <!-- <a href="../usuarios/usuarios.php">Usuarios</a> -->
+            <!-- <a href="../../php/auth/logout.php" class="btn btn-danger" style="margin-left: 10px; padding: 5px 10px;">Cerrar Sesión</a> -->
+
         </div>
     </nav>
 
@@ -181,4 +181,5 @@ $usuarios = $stmt->fetchAll(PDO::FETCH_ASSOC);//Obtener todos los resultados com
         }
     </script>
 </body>
+
 </html>

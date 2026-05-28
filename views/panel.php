@@ -66,29 +66,46 @@ $rol_id = $_SESSION['usuario_rol_id']; // Rol del usuario (1 = admin, otro = cli
 
                     <!-- OPCIÓN SOLO PARA ADMIN: CLIENTES -->
                     <?php if ($rol_id == 1): ?>
-                        <a href="clientes/clientes.php" class="card card-admin">
-                            <h3> Clientes</h3>
-                            <p>Gestionar base de datos de clientes y estatus.</p>
+                        <a href="clientes/clientes.php" class="card card-clientes">
+                            <div class="card-icon-container">
+                                <img src="../img/clientes.png" alt="Icono Clientes">
+                            </div>
+                            <div class="card-text">
+                                <h3>Clientes</h3>
+                                <p>Gestionar base de datos de clientes y estatus.</p>
+                            </div>
+                            <span class="card-btn">Ver Detalles</span>
                         </a>
                     <?php endif; ?>
 
-                    <!-- OPCIÓN: HABITACIONES (cambia según rol) -->
-                    <a href="habitaciones/habitaciones.php"
-                        class="card <?php echo $rol_id == 1 ? 'card-admin' : 'card-user'; ?>">
-                        <h3> Habitaciones</h3>
-                        <p>
-                            <?php
-                            echo $rol_id == 1
-                                ? 'Ver y modificar estado de las habitaciones del hotel.'
-                                : 'Ver habitaciones disponibles.';
-                            ?>
-                        </p>
+                    <!-- OPCIÓN: HABITACIONES -->
+                    <a href="habitaciones/habitaciones.php" class="card card-habitaciones">
+                        <div class="card-icon-container">
+                            <img src="../img/habitaciones.png" alt="Icono Habitaciones">
+                        </div>
+                        <div class="card-text">
+                            <h3>Habitaciones</h3>
+                            <p>
+                                <?php
+                                echo $rol_id == 1
+                                    ? 'Ver y modificar estado de las habitaciones del hotel.'
+                                    : 'Ver habitaciones disponibles.';
+                                ?>
+                            </p>
+                        </div>
+                        <span class="card-btn">Ver Detalles</span>
                     </a>
 
-                    <!-- OPCIÓN: RESERVACIONES (para todos) -->
-                    <a href="reservaciones/reservaciones.php" class="card card-user">
-                        <h3> Reservaciones</h3>
-                        <p>Consulta las reservaciones activas e historial disponible.</p>
+                    <!-- OPCIÓN: RESERVACIONES -->
+                    <a href="reservaciones/reservaciones.php" class="card card-reservaciones">
+                        <div class="card-icon-container">
+                            <img src="../img/reservacion.png" alt="Icono Reservaciones">
+                        </div>
+                        <div class="card-text">
+                            <h3>Reservaciones</h3>
+                            <p>Consulta las reservaciones activas e historial disponible.</p>
+                        </div>
+                        <span class="card-btn">Ver Detalles</span>
                     </a>
 
                 </div>

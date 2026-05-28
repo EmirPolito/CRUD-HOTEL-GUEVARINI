@@ -86,6 +86,25 @@ $mail->Password = 'TU_PASSWORD_SMTP'; // REEMPLAZAR
 $mail->Port = 2525;
 ```
 
+### 5.3 Activar Registro de Clientes (Opcional)
+
+El sistema de registro está completamente desarrollado y comparte el mismo diseño de pantalla dividida que la página de Login, pero por defecto se encuentra oculto para facilitar entornos cerrados.
+
+Para activar el registro de cara al usuario final:
+
+1. **Mostrar el Enlace en la Vista de Login:**
+   Abre el archivo `views/login.php` y localiza la clase `.form-links` (alrededor de la línea 73). Descomenta el enlace de registro para que quede de la siguiente forma:
+   ```html
+   <div class="form-links">
+       <a href="registro.php" style="display: inline-block;">Crear una cuenta nueva</a>
+       <br>
+       <a href="recuperar.php">¿Olvidaste tu contraseña?</a>
+   </div>
+   ```
+
+2. **Configurar el Envío de Correos (SMTP):**
+   Asegúrate de configurar correctamente tus credenciales en `php/auth/procesar_registro.php` (tal como se describe en el punto **5.2**), ya que el registro requiere enviar obligatoriamente un correo de verificación para activar la cuenta.
+
 ---
 
 ## 🚀 6. ¡Lanzamiento!

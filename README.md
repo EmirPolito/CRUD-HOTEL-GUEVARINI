@@ -77,6 +77,9 @@ Sigue estos pasos rápidos para desplegar el proyecto y asegurar que te funcione
 4. **Correos Electrónicos (Opcional):**
    Si deseas probar el sistema de registro y recuperación de contraseñas, asegúrate de colocar tus credenciales SMTP (ej. Mailtrap) en los archivos dentro de la carpeta `php/auth/`.
 
+5. **Habilitar el Registro de Usuarios (Opcional):**
+   El sistema de registro ya viene totalmente diseñado (con el mismo estilo de pantalla dividida que el de inicio de sesión), pero viene oculto por defecto para facilitar un entorno cerrado/demostrativo. Para activarlo y permitir que los usuarios se registren de forma autónoma, sigue las instrucciones detalladas en la guía completa de configuración.
+
 Para más detalles, revisa nuestra --> **[Guía Completa de Configuración y Despliegue](CONFIGURACION.md)**
 
 ---

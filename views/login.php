@@ -71,8 +71,13 @@ if (isset($_SESSION['usuario_id'])) {
                 </form>
 
                 <div class="form-links">
-                    <a href="registro.php" style="display: inline-block;">Crear una cuenta nueva</a>
-                    <br>
+                    <!-- 
+                      El registro está oculto por defecto para producción/demostración. 
+                      Para habilitarlo, descomenta la siguiente línea y asegúrate de configurar 
+                      las credenciales SMTP según la guía en CONFIGURACION.md 
+                    -->
+                    <!-- <a href="registro.php" style="display: inline-block;">Crear una cuenta nueva</a> -->
+                    <!-- <br> -->
                     <a href="recuperar.php">¿Olvidaste tu contraseña?</a>
                 </div>
             </div>
