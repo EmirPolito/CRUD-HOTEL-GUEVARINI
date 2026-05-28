@@ -82,7 +82,7 @@ body::before {
 .grid-opciones {
   display: grid;
   grid-template-columns: 1fr; /* Una tarjeta arriba de la otra */
-  gap: 25px; /* Espaciado muy optimizado */
+  gap: 45px; /* Espaciado muy optimizado */
   justify-content: center;
 }
 
@@ -90,7 +90,7 @@ body::before {
 .card {
   background: #ffffff;
   border: 1px solid rgba(255, 255, 255, 0.5);
-  padding: 20px 30px; /* Altura súper reducida */
+  padding: 15px 30px; /* Altura súper reducida */
   border-radius: 14px;
   text-decoration: none;
   color: #333;
