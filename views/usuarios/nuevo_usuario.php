@@ -20,18 +20,20 @@ $roles = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <meta charset="UTF-8">
     <title>Nuevo Usuario - CRUD HOTEL</title>
 
-    <link rel="stylesheet" href="../../css/login.css">
+    <link rel="stylesheet" href="../../css/login.css?v=<?php echo time(); ?>">
 </head>
 <body>
     <nav class="navbar">
-        <div class="logo">HOTEL</div>
+        <a href="../panel.php" class="logo-link" style="text-decoration:none;">
+            <div class="logo"><img src="../../img/logo-hotel-guevarini-blanco.png" alt="Hotel Guevarini"
+                    style="height: 101px; margin: -30px 0;"></div>
+        </a>
         <div class="nav-links">
-            <a href="../usuarios/usuarios.php">Volver a Usuarios</a>
-            <a href="../../php/auth/logout.php" class="btn btn-danger" style="padding: 5px 10px;">Cerrar Sesión</a>
+            <a href="usuarios.php">Volver a Usuarios</a>
         </div>
     </nav>
 
-    <div class="login-container" style="max-width: 550px;   margin: 15px auto;  border-top: 4px solid #1cc261;">
+    <div class="login-container" style="max-width: 550px; border-top: 4px solid #1cc261;">
         <a href="usuarios.php" class="btn-close-card" title="Cancelar">&times;</a>
         <h2 style="margin-bottom: 25px;">Registrar <span style="color:#2ecc71;">Nuevo Usuario</span></h2>
         <p style="margin-bottom: 20px; color: #666;">Después de registrar, se enviará un email de verificación al usuario para activar la cuenta.</p>

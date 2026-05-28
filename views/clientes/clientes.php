@@ -35,12 +35,12 @@ $clientes = $stmt->fetchAll(PDO::FETCH_ASSOC);
                     style="height: 101px; margin: -30px 0;"></div>
         </a>
         <div class="nav-links">
-            <span style="font-weight: 600; margin-right: 390px;">
+            <!-- <span style="font-weight: 600; margin-right: 390px;">
                 Bienvenido -
                 <?php echo ($_SESSION['usuario_rol_id'] == 1 ? 'Administrador' : 'Cliente'); ?>
                 <?php echo htmlspecialchars($_SESSION['usuario_nombre']); ?>
-            </span>
-            <a href="../usuarios/usuarios.php">Usuarios</a>
+            </span> -->
+            <!-- <a href="../usuarios/usuarios.php">Usuarios</a> -->
             <a href="../panel.php">Inicio</a>
             <!-- <a href="../../php/auth/logout.php" class="btn btn-danger" style="margin-left: 10px; padding: 5px 10px;">Cerrar Sesión</a> -->
         </div>

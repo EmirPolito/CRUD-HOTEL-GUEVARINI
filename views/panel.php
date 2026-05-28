@@ -37,7 +37,7 @@ $rol_id = $_SESSION['usuario_rol_id']; // Rol del usuario (1 = admin, otro = cli
 
         <div class="nav-links">
 
-            <span style="font-weight:600;margin-right:35px;">
+            <span style="font-weight:600;margin-right:50px;">
                 Bienvenido -
                 <?php echo ($rol_id == 1 ? 'Administrador' : 'Cliente'); ?> <!-- Muestra el rol dependiendo del ID -->
                 <?php echo htmlspecialchars($nombre_usuario); ?> <!-- Muestra el nombre de forma segura -->

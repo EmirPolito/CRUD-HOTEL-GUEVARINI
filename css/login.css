@@ -29,7 +29,12 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  display: block; /* Quitar el centrado para que ocupe todo */
+  display: flex; /* Cambiado a flex */
+  flex-direction: column; /* Dirección vertical */
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/menu.jpg"); /* Imagen de fondo con filtro oscuro */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .login-page-wrapper {
@@ -93,21 +98,59 @@ body {
   color: #333;
 }
 
-/*Propiedades de los inputs*/
-.form-group input {
+/*Propiedades de los inputs y selects*/
+.form-group input,
+.form-group select {
   width: 100%;
   padding: 10px 12px;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 16px;
   background: #fff;
+  font-family: inherit;
 }
 
-/*Propiedades de cuando se hace click en el input*/
-.form-group input:focus {
+/*Propiedades de cuando se hace click en el input o select*/
+.form-group input:focus,
+.form-group select:focus {
   outline: none;
   border-color: #1A6A9C;
   box-shadow: 0 0 0 2px rgba(26, 106, 156, 0.2);
+}
+
+/* ===== ESTILOS PARA FORMULARIOS CRUD (NUEVO/EDITAR) ===== */
+.login-container {
+  background: #fff;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  margin: auto; /* Centrado vertical y horizontal perfecto */
+  position: relative;
+  width: 90%;
+  color: #333;
+}
+
+.login-container h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+  text-align: center;
+}
+
+.btn-close-card {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #aaa;
+  text-decoration: none;
+  line-height: 1;
+  transition: color 0.2s ease;
+}
+
+.btn-close-card:hover {
+  color: #e0210c;
 }
 
 /*Propiedades del boton de login*/

@@ -12,18 +12,20 @@ if (!isset($_SESSION['usuario_id']) || $_SESSION['usuario_rol_id'] != 1) {
     <meta charset="UTF-8">
     <title>Nuevo Cliente - CRUD HOTEL</title>
 
-    <link rel="stylesheet" href="../../css/login.css">
+    <link rel="stylesheet" href="../../css/login.css?v=<?php echo time(); ?>">
 </head>
 <body>
     <nav class="navbar">
-        <div class="logo">HOTEL</div>
+        <a href="../panel.php" class="logo-link" style="text-decoration:none;">
+            <div class="logo"><img src="../../img/logo-hotel-guevarini-blanco.png" alt="Hotel Guevarini"
+                    style="height: 101px; margin: -30px 0;"></div>
+        </a>
         <div class="nav-links">
-            <a href="../clientes/clientes.php">Volver a Clientes</a>
-            <a href="../../php/auth/logout.php" class="btn btn-danger" style="padding: 5px 10px;">Cerrar Sesión</a>
+            <a href="clientes.php">Volver a Clientes</a>
         </div>
     </nav>
 
-    <div class="login-container" style="max-width: 500px; margin: 40px auto;  border-top: 4px solid #3498db;">
+    <div class="login-container" style="max-width: 500px; border-top: 4px solid #3498db;">
         <a href="clientes.php" class="btn-close-card" title="Cancelar">&times;</a>
         <h2 style="margin-bottom: 25px;">Registrar <span style="color:#3498db;">Nuevo Cliente</span></h2>
 

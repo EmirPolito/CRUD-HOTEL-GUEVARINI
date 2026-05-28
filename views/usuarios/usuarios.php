@@ -47,11 +47,11 @@ $usuarios = $stmt->fetchAll(PDO::FETCH_ASSOC);//Obtener todos los resultados com
         </a>
 
         <div class="nav-links">
-            <span style="font-weight: 600; margin-right: 310px;"> <!-- Mensaje de bienvenida con rol dinámico -->
+            <!-- <span style="font-weight: 600; margin-right: 310px;">
                 Bienvenido -
                 <?php echo ($_SESSION['usuario_rol_id'] == 1 ? 'Administrador' : 'Cliente'); ?>
                 <?php echo htmlspecialchars($_SESSION['usuario_nombre']); ?>
-            </span>
+            </span> -->
 
             <a href="../panel.php">Inicio</a>
             <!-- <a href="../usuarios/usuarios.php">Usuarios</a> -->

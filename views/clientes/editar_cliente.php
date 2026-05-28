@@ -34,18 +34,20 @@ if(!$cliente){
     <meta charset="UTF-8">
     <title>Editar Cliente - CRUD HOTEL</title>
 
-    <link rel="stylesheet" href="../../css/login.css">
+    <link rel="stylesheet" href="../../css/login.css?v=<?php echo time(); ?>">
 </head>
 <body>
     <nav class="navbar">
-        <div class="logo">HOTEL</div>
+        <a href="../panel.php" class="logo-link" style="text-decoration:none;">
+            <div class="logo"><img src="../../img/logo-hotel-guevarini-blanco.png" alt="Hotel Guevarini"
+                    style="height: 101px; margin: -30px 0;"></div>
+        </a>
         <div class="nav-links">
-            <a href="../clientes/clientes.php">Volver a Clientes</a>
-            <a href="../../php/auth/logout.php" class="btn btn-danger" style="padding: 5px 10px;">Cerrar Sesión</a>
+            <a href="clientes.php">Volver a Clientes</a>
         </div>
     </nav>
 
-    <div class="login-container" style="max-width: 500px; margin-top: 40px; border-top: 4px solid #f39c12;">
+    <div class="login-container" style="max-width: 500px; border-top: 4px solid #f39c12;">
         <a href="clientes.php" class="btn-close-card" title="Cancelar">&times;</a>
         <h2 style="margin-bottom: 25px;">Editar Cliente <span style="color:#f39c12;">#<?php echo $cliente['id_cliente']; ?></span></h2>
 
