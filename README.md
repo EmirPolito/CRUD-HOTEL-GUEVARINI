@@ -123,10 +123,10 @@ Este proyecto está bajo la Licencia MIT. Para más detalles, consulta el archiv
 
 Este proyecto fue estructurado y desarrollado como entrega e implementación final del Sistema de Gestión Hotelera por:
 
-**Emir Polito** - Frontend & QA Tester
+> **Emir Polito** - Frontend & QA Tester
 
 - GitHub: https://github.com/EmirPolito
 
-**Irving Mendez** - Full Stack & Designer
+> **Irving Mendez** - Full Stack & Designer
 
 - Github: https://github.com/1RV1N6-M3ND3Z
