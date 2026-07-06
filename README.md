@@ -121,7 +121,7 @@ Este proyecto está bajo la Licencia MIT. Para más detalles, consulta el archiv
 
 ## Desarrolladores
 
-Este proyecto fue estructurado y desarrollado como entrega e implementación final del Sistema de Gestión Hotelera por:
+Este proyecto fue estructurado y desarrollado como entrega e implementación final del Sistema de Gestión Hotelera por
 
 > **Emir Polito** - Frontend & QA Tester
 
