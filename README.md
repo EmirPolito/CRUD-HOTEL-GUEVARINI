@@ -11,7 +11,7 @@
 </div>
 
 **HOTEL GUEVARINI** es un sistema web desarrollado para optimizar la administración hotelera mediante un entorno moderno, intuitivo y seguro. La plataforma permite
-gestionar usuarios, habitaciones y reservaciones, integrando autenticación, control de roles y validaciones inteligentes para mejorar la organización operativa del hotel.
+gestionar usuarios, habitaciones y reservaciones, integrando autenticación, control de roles y validaciones inteligentes para mejorar la organización operativa del hotel
 <br>
 <br>
 <img height="732" alt="1528df37-3067-4c41-b19f-24c5c8da4d2c" src="https://github.com/user-attachments/assets/24958552-e03e-4258-802f-ee4ffcdf5297" />
